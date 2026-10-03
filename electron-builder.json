@@ -1,0 +1,29 @@
+{
+  "appId": "com.pawpilot.desktop",
+  "productName": "PawPilot",
+  "copyright": "Copyright © 2026 PawPilot",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "PawPilot"
+  }
+}
